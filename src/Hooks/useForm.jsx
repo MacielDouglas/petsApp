@@ -6,6 +6,11 @@ const validation = {
       /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/gi,
     message: 'Invalid email address',
   },
+  password: {
+    regex: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$/,
+    message:
+      'The password must have: 1 uppercase character, 1 lowercase character, 1 special character, 1 number. Contain at least 8 characters.',
+  },
 };
 
 const useForm = (type) => {
