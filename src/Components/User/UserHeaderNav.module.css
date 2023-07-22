@@ -1,0 +1,39 @@
+.nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.nav a, 
+.nav button {
+  background: #eee;
+  border-radius: .2rem;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav button:hover,
+.nav button:focus {
+  background: white;
+  box-shadow: 0 0 0 3px #eee;
+  border-color: #333;
+  outline: none;
+}
+
+/* A classe .active é adicionada automaticamente pelo React, e por isso podemos estilizalas diretamente. Por isso é necessário envolve-lo em uma função. por isso foi usado a:global(.active), essa é uma função do CSS Module */
+.nav a:global(.active) {
+  background: white;
+  box-shadow: 0 0 0 3px #fea;
+  border-color: #fb1;
+}
+
+.nav a:global(.active) svg > * {
+  fill: #fb1
+}
