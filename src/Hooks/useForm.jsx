@@ -11,6 +11,10 @@ const validation = {
     message:
       'The password must have: 1 uppercase character, 1 lowercase character, 1 special character, 1 number. Contain at least 8 characters.',
   },
+  number: {
+    regex: /^\d+$/,
+    message: 'Invalid number',
+  },
 };
 
 const useForm = (type) => {
