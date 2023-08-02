@@ -6,6 +6,10 @@
 
 }
 
+.single.form {
+  margin: 1rem 0
+}
+
 .textarea {
   display: flex;
   width: 100%;
