@@ -7,6 +7,7 @@ const Footer = () => {
     <div className={styles.footer}>
       <Dogs />
       <p>Dogs. Alguns direitos reservados.</p>
+      <p>Desenvolvido por Maciel D. e Origamid</p>
     </div>
   );
 };
