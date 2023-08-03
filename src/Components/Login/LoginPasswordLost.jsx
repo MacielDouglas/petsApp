@@ -25,7 +25,7 @@ const LoginPasswordLost = () => {
   }
 
   return (
-    <section>
+    <section className="animeLeft">
       <Head
         title="Perdeu a Senha"
         description="Página de recuperação de senha do site Dogs."
