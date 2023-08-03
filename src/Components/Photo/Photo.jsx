@@ -5,6 +5,7 @@ import { PHOTO_GETS } from '../../api.js/Api';
 import Error from '../Helper/Error';
 import Loading from '../Helper/Loading';
 import PhotoContent from './PhotoContent';
+import Head from '../Helper/Head';
 
 const Photo = () => {
   const { id } = useParams();
@@ -20,6 +21,10 @@ const Photo = () => {
   if (data)
     return (
       <section className="container mainContainer">
+        <Head
+          title={data.photo.title}
+          description="Foto pessoal do usuário no site Dogs."
+        />
         <PhotoContent data={data} />
       </section>
     );
