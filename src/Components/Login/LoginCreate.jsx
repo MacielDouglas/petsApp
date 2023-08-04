@@ -7,6 +7,7 @@ import { UserContext } from '../../UserContext';
 import useFetch from '../../Hooks/useFetch';
 import Error from '../Helper/Error';
 import Head from '../Helper/Head';
+import styles from './Login.module.css';
 
 const LoginCreate = () => {
   const username = useForm();
@@ -28,7 +29,7 @@ const LoginCreate = () => {
   }
 
   return (
-    <section className="animeLeft">
+    <section className={`${styles.formCr} animeLeft`}>
       <Head
         title="Crie sua conta"
         description="Página para criar conta do site Dogs."
