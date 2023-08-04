@@ -6,7 +6,14 @@ const Footer = () => {
   return (
     <div className={styles.footer}>
       <Dogs />
-      <p>Dogs. Alguns direitos reservados.</p>
+      <p>
+        Dogs © Alguns direitos reservados. - (site fictício desenvolvido por
+        Maciel D.)
+      </p>
+      <p>
+        Acesse outros projetos: <a href="https://olibike.web.app/">#OliBike</a>{' '}
+        | <a href="https://cafe-bourbon.web.app/">Café Bourbon</a>
+      </p>
     </div>
   );
 };
