@@ -2,7 +2,6 @@
 /* Reset geral das paginas */
 * {
   box-sizing: border-box;
-
 }
 
 body {
@@ -28,7 +27,7 @@ ul,li {
 img {
   display: block;
   max-width: 100%; /* expande ao tamanho máximo da tela.*/
-}
+} 
 
 button, input {
   display: block;
@@ -103,4 +102,4 @@ a {
 .VictoryContainer {
   height: initial !important;
   
-}
+} 

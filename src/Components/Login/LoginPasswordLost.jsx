@@ -6,6 +6,7 @@ import useFetch from '../../Hooks/useFetch';
 import { PASSWORD_LOST } from '../../api.js/Api';
 import Error from '../Helper/Error';
 import Head from '../Helper/Head';
+import styles from './Login.module.css';
 
 const LoginPasswordLost = () => {
   const login = useForm();
@@ -25,7 +26,7 @@ const LoginPasswordLost = () => {
   }
 
   return (
-    <section className="animeLeft">
+    <section className={`${styles.formsy} animeLeft login`}>
       <Head
         title="Perdeu a Senha"
         description="Página de recuperação de senha do site Dogs."

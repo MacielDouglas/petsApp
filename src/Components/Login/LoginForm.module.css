@@ -1,5 +1,6 @@
 .form {
   margin-bottom: 2rem;
+  width: 100%;
 }
 
 .perdeu {
@@ -16,6 +17,7 @@
   width: 100%;
   background: currentColor;
   display: block;
+
 }
 
 .cadastro {
